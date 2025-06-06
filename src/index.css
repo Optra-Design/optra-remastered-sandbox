@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -57,7 +56,7 @@
     font-feature-settings: "cv11", "ss01";
     font-variation-settings: "opsz" 32;
     overflow-x: hidden;
-    background: linear-gradient(180deg, rgb(9 9 11) 0%, rgb(12 10 16) 50%, rgb(9 9 11) 100%);
+    background: radial-gradient(ellipse at top, rgb(15 15 17) 0%, rgb(9 9 11) 35%, rgb(6 6 8) 100%);
     background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -69,7 +68,7 @@
     overflow-x: hidden;
   }
 
-  /* Premium text gradients */
+  /* Ultra-premium text gradients */
   .text-gradient {
     background: linear-gradient(135deg, 
       #ffffff 0%, 
@@ -104,53 +103,64 @@
     font-weight: 700;
   }
 
-  /* Enhanced typography */
+  /* Ultra-premium typography */
   h1, h2, h3, h4, h5, h6 {
     word-wrap: break-word;
     overflow-wrap: break-word;
-    line-height: 1.1;
-    letter-spacing: -0.025em;
-    font-weight: 300;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    font-weight: 200;
   }
 
   h1 {
-    font-size: clamp(3rem, 8vw, 8rem);
-    line-height: 1.05;
-    letter-spacing: -0.05em;
-    font-weight: 200;
+    font-size: clamp(4rem, 12vw, 14rem);
+    line-height: 0.85;
+    letter-spacing: -0.02em;
+    font-weight: 100;
   }
 
   h2 {
-    font-size: clamp(2rem, 6vw, 5rem);
-    line-height: 1.1;
-    letter-spacing: -0.04em;
-    font-weight: 200;
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    font-weight: 100;
   }
 
-  /* Premium scrollbar */
+  /* Luxury scrollbar */
   ::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
     background: rgba(39, 39, 42, 0.1);
-    border-radius: 3px;
+    border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgba(255, 107, 53, 0.4), rgba(233, 30, 99, 0.4));
-    border-radius: 3px;
+    background: linear-gradient(180deg, rgba(255, 107, 53, 0.5), rgba(233, 30, 99, 0.5));
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, rgba(255, 107, 53, 0.6), rgba(233, 30, 99, 0.6));
+    background: linear-gradient(180deg, rgba(255, 107, 53, 0.7), rgba(233, 30, 99, 0.7));
   }
 }
 
 @layer utilities {
-  /* Premium glass effects */
+  /* Ultra-premium glass effects */
   .glass {
-    background: rgba(24, 24, 27, 0.40);
+    background: rgba(24, 24, 27, 0.50);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 
+      0 12px 40px rgba(0, 0, 0, 0.25),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+
+  .glass-subtle {
+    background: rgba(24, 24, 27, 0.30);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -159,35 +169,25 @@
       inset 0 1px 0 rgba(255, 255, 255, 0.05);
   }
 
-  .glass-subtle {
-    background: rgba(24, 24, 27, 0.25);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.03);
-    box-shadow: 
-      0 4px 24px rgba(0, 0, 0, 0.15),
-      inset 0 1px 0 rgba(255, 255, 255, 0.03);
-  }
-
-  /* Premium hover effects */
+  /* Luxury hover effects */
   .hover-lift {
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .hover-lift:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
     box-shadow: 
-      0 24px 48px rgba(0, 0, 0, 0.3),
-      0 0 0 1px rgba(255, 107, 53, 0.08);
+      0 32px 64px rgba(0, 0, 0, 0.4),
+      0 0 0 1px rgba(255, 107, 53, 0.1);
   }
 
   /* Enhanced animations */
   .animate-fade-in {
-    animation: fade-in 1s ease-out;
+    animation: fade-in 1.2s ease-out;
   }
 
   .animate-slide-up {
-    animation: slide-up 0.8s ease-out;
+    animation: slide-up 1s ease-out;
   }
 
   /* Color accent utilities */
@@ -198,7 +198,7 @@
   .accent-cyan { color: #00bcd4; }
 }
 
-/* Premium animations */
+/* Ultra-premium animations */
 @keyframes gradient-shift {
   0%, 100% {
     background-position: 0% 50%;
@@ -217,7 +217,7 @@
 @keyframes fade-in {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
@@ -228,7 +228,7 @@
 @keyframes slide-up {
   from {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(60px);
   }
   to {
     opacity: 1;
@@ -236,35 +236,36 @@
   }
 }
 
-/* Mobile optimization */
+/* Mobile optimization for premium feel */
 @media (max-width: 768px) {
   .responsive-padding {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   
   .responsive-text {
-    font-size: clamp(0.875rem, 3.5vw, 1.125rem);
+    font-size: clamp(1rem, 4vw, 1.25rem);
     line-height: 1.6;
   }
 
   h1 {
-    font-size: clamp(2.5rem, 12vw, 4rem);
-    line-height: 1.1;
+    font-size: clamp(3rem, 15vw, 5rem);
+    line-height: 0.9;
   }
 
   h2 {
-    font-size: clamp(1.5rem, 8vw, 2.5rem);
-    line-height: 1.15;
+    font-size: clamp(2rem, 10vw, 3rem);
+    line-height: 1.1;
   }
 }
 
-/* Enhanced focus states */
+/* Enhanced focus states with luxury feel */
 button:focus-visible,
 a:focus-visible {
-  outline: 2px solid rgba(255, 107, 53, 0.5);
-  outline-offset: 3px;
-  border-radius: 6px;
+  outline: 2px solid rgba(255, 107, 53, 0.6);
+  outline-offset: 4px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.1);
 }
 
 /* Performance optimizations */
@@ -276,7 +277,7 @@ a:focus-visible {
   will-change: opacity;
 }
 
-/* Premium texture overlay */
+/* Ultra-premium texture overlay */
 .texture-overlay {
   position: relative;
 }
@@ -289,10 +290,10 @@ a:focus-visible {
   right: 0;
   bottom: 0;
   background-image: 
-    radial-gradient(circle at 2px 2px, rgba(255,255,255,0.015) 1px, transparent 0);
-  background-size: 24px 24px;
+    radial-gradient(circle at 2px 2px, rgba(255,255,255,0.02) 1px, transparent 0);
+  background-size: 32px 32px;
   pointer-events: none;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 /* ... keep existing code (theme classes at the end) */
