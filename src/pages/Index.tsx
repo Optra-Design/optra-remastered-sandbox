@@ -93,7 +93,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,107,53,0.03),transparent_70%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(233,30,99,0.02),transparent_70%)]" />
         
-        {/* Refined grid pattern */}
+        {/* Refined grid pattern - restored to original subtle opacity */}
         <div className="absolute inset-0 opacity-[0.02]">
           <div className="absolute inset-0" style={{
             backgroundImage: `
