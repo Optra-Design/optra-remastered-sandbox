@@ -72,7 +72,7 @@ const Index = () => {
     },
     {
       icon: <Code2 className="w-8 h-8" />,
-      title: "Digital Products",
+      title: "Digital Products", 
       description: "User-centered interfaces and interactions that convert visitors into customers through thoughtful UX excellence."
     },
     {
@@ -97,13 +97,16 @@ const Index = () => {
         
         {/* Refined grid pattern */}
         <div className="absolute inset-0 opacity-[0.015]">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `
-              linear-gradient(rgba(245,158,11,0.2) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(245,158,11,0.2) 1px, transparent 1px)
-            `,
-            backgroundSize: '40px 40px'
-          }} />
+          <div 
+            className="absolute inset-0" 
+            style={{
+              backgroundImage: `
+                linear-gradient(rgba(245,158,11,0.2) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(245,158,11,0.2) 1px, transparent 1px)
+              `,
+              backgroundSize: '40px 40px'
+            }} 
+          />
         </div>
         
         {/* Elegant floating elements */}
@@ -112,7 +115,7 @@ const Index = () => {
         <div className="absolute bottom-60 left-60 w-2.5 h-2.5 bg-rose-400/20 rounded-full animate-pulse" style={{animationDelay: '6s', animationDuration: '7s'}} />
         
         {/* Premium texture overlay */}
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.008"%3E%3Ccircle cx="7" cy="7" r="1"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30" />
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.008\"%3E%3Ccircle cx=\"7\" cy=\"7\" r=\"1\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30" />
       </div>
       
       {/* Hero Section */}
